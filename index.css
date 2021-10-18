@@ -27,6 +27,15 @@
     margin: 0px 10px;
     text-align: center;
 }
+.aside .card form .first-child select{
+    width: 20%;
+    /* height: 20px; */
+    padding: 15px 0px;
+    margin: 0px 10px;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid #cfc5c5;
+}
 
 .aside .card form .second-child{
     display: flex;
@@ -54,6 +63,11 @@
     border-bottom: 2px solid #cfc5c5;
     margin: 20px 0px;
     font-weight: bold;
+}
+.aside .card form .third-child input{
+    justify-content: center;
+    text-align: center;
+    border: none;
 }
 .aside .card form input[type = submit]{
     width: 100%;
