@@ -1,3 +1,4 @@
+
 .aside{
     background-color: white;
     width: 400px;
@@ -6,6 +7,7 @@
     height: 350px;
     justify-items: center;
     align-items: center;
+    margin: 11% 31%;
 }
 .aside .card input{
     border: none;
