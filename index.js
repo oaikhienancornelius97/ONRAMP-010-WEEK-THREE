@@ -1,39 +1,42 @@
-// $(function() {
-
-//     $("form div").append('<div class="inc button">+</div><div class="dec button">-</div>');
-
-// });
-
-// $(".button").on("click", function() {
-
-//     var $button = $(this);
-//     var oldValue = $button.parent().find("input").val();
-  
-//     if ($button.text() == "+") {
-//         var newVal = parseFloat(oldValue) + 1;
-//       } else {
-//      // Don't allow decrementing below zero
-//       if (oldValue > 0) {
-//         var newVal = parseFloat(oldValue) - 1;
-//       } else {
-//         newVal = 0;
-//       }
-//     }
-  
-//     $button.parent().find("input").val(newVal);
-  
-//   });
-
-//   var id = $button.attr("id");
-// $.ajax({
-//   type: "POST",
-//   url: "dosomething.php?id=" + id + "&newvalue=" + newVal,
-//   success: function() {
-//     $button.parent().find("input").val(newVal);
-//   }
-// });
-
-
-function Minus(){
-    document.getElementById("demo").innerHTML = "4 Persons";
+function mySubmit(){
+    alert("Your reservation has been made!!!")
 }
+var y = 0;
+var x = `${y} people`;
+
+document.getElementById("output-area").innerHTML = x;
+
+function Plus() {
+    if (y >= 0) {
+      ++y;
+      if (y === 1) {
+        document.getElementById("output-area").innerHTML = `${y} person`;
+      } else {
+        document.getElementById("output-area").innerHTML = `${y} people`;
+      }
+    }
+  }
+
+  function Minus() {
+    if (y > 0) {
+      --y;
+      if (y === 0) {
+        document.getElementById("output-area").innerHTML = `${y} people`;
+      } else if (y === 1) {
+        document.getElementById("output-area").innerHTML = `${y} person`;
+      } else {
+        document.getElementById("output-area").innerHTML = `${y} people`;
+      }
+    }
+  }
+  function mySubmit1(){
+    swal({
+   title: "Reservation Successful", 
+   text: "Happy Dining!!!!", 
+   type: "success"
+ },
+function(){ 
+   location.reload();
+}
+);
+} 
